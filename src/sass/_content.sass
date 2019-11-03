@@ -1,0 +1,60 @@
+.jumbotron
+    padding: $gutter * 4 10%
+    text-align: center
+    background: url(../images/bg-header-mobile.png)  no-repeat
+
+@media screen and (min-width: 390px)
+    .jumbotron
+        background: url(../images/bg-header-desktop.png)  no-repeat
+
+
+.flexy
+    padding: $gutter + 10px 10%
+    .list
+        text-align: center
+        &__item
+            margin: $gutter  + 10px 0
+
+footer
+    background: #efffff
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: $gutter * 4 10%
+    .navigation
+        margin: $gutter + 10px 0
+        list-style: none
+        &__link
+            text-align: center
+            padding: $gutter - 6px 0
+    .social
+        display: flex
+        justify-content: space-between
+        list-style: none
+        &__link
+            padding: 0 $gutter
+
+@media screen and (min-width: 768px)
+    .flexy
+        padding: 0
+        display: flex
+        margin-bottom: $gutter * 3
+        .list
+            padding: 0 10%
+            text-align: left
+            &__item
+                margin: $gutter  + 10px 0
+
+    footer
+        background: #efffff
+        flex-direction: row
+        justify-content: space-between
+        padding: $gutter * 2 10%
+        .navigation
+            width: 50%
+            margin: auto
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            &__link
+                text-align: left
